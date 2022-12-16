@@ -1,0 +1,52 @@
+{
+    "name": "TheHunt",
+    "title": "The Hunt First Edition",
+    "description": "The Hunt TTRPG","version": "1.0.0",
+    "templateVersion": 2,
+    "author": "Razzaphale",
+    "scripts": [
+        "scripts/thehunt-script-1.js",
+        "scripts/thehunt-script-2.js"
+    ],
+    "esmodules": [
+        "scripts/thehunt-module-1.mjs"
+    ],
+    "styles": [
+        "styles/thehunt-styles-1.css",
+        "styles/thehunt-styles-2.css"
+    ],
+    "packs": [
+        {
+            "name": "monsters",
+            "label": "Monsters",
+            "system": "TheHunt",
+            "module": "thehunt",
+            "path": "packs/monsters.db",
+            "entity": "Actor"
+        },
+        {
+            "name": "items",
+            "label": "Items",
+            "system": "mysystem",
+            "module": "mysystem",
+            "path": "packs/items.db",
+            "entity": "Item"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "socket": false,
+    "initiative": "1d100",
+    "gridDistance": 3,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "resources.magic",
+    "url": "https://github.com/Razzaphale/the-hunt-foundry-vtt",
+    "manifest": "https://github.com/Razzaphale/the-hunt-foundry-vtt",
+    "download": "https://github.com/Razzaphale/the-hunt-foundry-vtt/archive/refs/heads/main.zip"
+}
